@@ -72,14 +72,19 @@ export class OfficeScene extends Phaser.Scene {
     });
 
     this.remotePlayers = new Map();
+    this.networkReady = false;
     this.network = new NetworkManager(this, this.username, this.skin, spawn.x, spawn.y);
 
     this.scale.on('resize', this.resize, this);
   }
 
+  onNetworkReady() {
+    this.networkReady = true;
+  }
+
   createMap() {
     const map = this.make.tilemap({ tileWidth: SRC_TILE_SIZE, tileHeight: SRC_TILE_SIZE, width: MAP_WIDTH, height: MAP_HEIGHT });
-    const tiles = map.addTilesetImage('tileset', 'tileset', SRC_TILE_SIZE, SRC_TILE_SIZE, 0, 0);
+    const tiles = map.addTilesetImage('tileset', 'tileset', SRC_TILE_SIZE, SRC_TILE_SIZE, 0, 0, 0);
     const layer = map.createBlankLayer('ground', tiles, 0, 0);
 
     for (let y = 0; y < MAP_HEIGHT; y++) {
@@ -131,7 +136,7 @@ export class OfficeScene extends Phaser.Scene {
   }
 
   handleInput() {
-    if (this.player.isMoving) return;
+    if (!this.networkReady || this.player.isMoving) return;
 
     let dx = 0;
     let dy = 0;

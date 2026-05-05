@@ -19,9 +19,8 @@ export class NetworkManager {
     try {
       const client = new Client(SERVER_URL);
       this.room = await client.joinOrCreate('office');
-      this.connected = true;
 
-      // Send create message
+      // Send create message with current position
       this.room.send('create', {
         username: this.username,
         skin: this.skin,
@@ -29,6 +28,9 @@ export class NetworkManager {
         y: this.spawnY,
         direction: 0,
       });
+
+      this.connected = true;
+      this.scene.onNetworkReady();
 
       // Listen for existing and new players
       this.room.state.players.onAdd((player, sessionId) => {
