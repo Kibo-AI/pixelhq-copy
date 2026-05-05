@@ -94,6 +94,3 @@ Open `http://localhost:5173` in one or more browser tabs. Enter a username, pick
 └── package.json
 ```
 
-## License
-
-MIT
