@@ -1,5 +1,514 @@
 {
   "schemaVersion": 2,
-  "indexedAt": "2026-05-05T14:16:51.342Z",
-  "files": {}
+  "indexedAt": "2026-05-05T14:54:01.260Z",
+  "files": {
+    "client/package-lock.json": {
+      "path": "client/package-lock.json",
+      "language": "json",
+      "parserStatus": "indexed",
+      "size": 34146,
+      "mtimeMs": 1777991539730.3408,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "5e643bb0"
+      },
+      "indexedAt": "2026-05-05T14:54:01.254Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.254Z",
+      "symbols": [],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": []
+    },
+    "client/package.json": {
+      "path": "client/package.json",
+      "language": "json",
+      "parserStatus": "indexed",
+      "size": 316,
+      "mtimeMs": 1777990802897.3008,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "d49635ce"
+      },
+      "indexedAt": "2026-05-05T14:54:01.255Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.255Z",
+      "symbols": [],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": []
+    },
+    "client/src/game/Game.js": {
+      "path": "client/src/game/Game.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 634,
+      "mtimeMs": 1777991085475.6965,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "7fa9fff5"
+      },
+      "indexedAt": "2026-05-05T14:54:01.255Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.255Z",
+      "symbols": [
+        {
+          "name": "startGame",
+          "kind": "function",
+          "signature": "(username, skin, parent)",
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "specifier": "phaser"
+        },
+        {
+          "specifier": "./scenes/OfficeScene.js",
+          "resolvedPath": "client/src/game/scenes/OfficeScene.js"
+        }
+      ],
+      "outgoingPaths": [
+        "client/src/game/scenes/OfficeScene.js"
+      ],
+      "incomingPaths": [
+        "client/src/main.js"
+      ]
+    },
+    "client/src/game/assets/AssetGenerator.js": {
+      "path": "client/src/game/assets/AssetGenerator.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 6496,
+      "mtimeMs": 1777992202284.522,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "cd77c7e5"
+      },
+      "indexedAt": "2026-05-05T14:54:01.256Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.256Z",
+      "symbols": [
+        {
+          "name": "generateTileset",
+          "kind": "function",
+          "signature": "()",
+          "exported": true
+        },
+        {
+          "name": "generateAvatarSheet",
+          "kind": "function",
+          "signature": "()",
+          "exported": true
+        }
+      ],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": [
+        "client/src/game/scenes/OfficeScene.js"
+      ]
+    },
+    "client/src/game/entities/Player.js": {
+      "path": "client/src/game/entities/Player.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 2995,
+      "mtimeMs": 1777991356261.559,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "547be6d7"
+      },
+      "indexedAt": "2026-05-05T14:54:01.256Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.256Z",
+      "symbols": [
+        {
+          "name": "Player",
+          "kind": "class",
+          "exported": true
+        }
+      ],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": [
+        "client/src/game/scenes/OfficeScene.js"
+      ]
+    },
+    "client/src/game/entities/RemotePlayer.js": {
+      "path": "client/src/game/entities/RemotePlayer.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 2876,
+      "mtimeMs": 1777991356261.5588,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "b54581fe"
+      },
+      "indexedAt": "2026-05-05T14:54:01.256Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.256Z",
+      "symbols": [
+        {
+          "name": "RemotePlayer",
+          "kind": "class",
+          "exported": true
+        }
+      ],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": [
+        "client/src/game/scenes/OfficeScene.js"
+      ]
+    },
+    "client/src/game/network/NetworkManager.js": {
+      "path": "client/src/game/network/NetworkManager.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 1888,
+      "mtimeMs": 1777992533132.4785,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "be710059"
+      },
+      "indexedAt": "2026-05-05T14:54:01.256Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.256Z",
+      "symbols": [
+        {
+          "name": "NetworkManager",
+          "kind": "class",
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "specifier": "colyseus.js"
+        }
+      ],
+      "outgoingPaths": [],
+      "incomingPaths": [
+        "client/src/game/scenes/OfficeScene.js"
+      ]
+    },
+    "client/src/game/scenes/OfficeScene.js": {
+      "path": "client/src/game/scenes/OfficeScene.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 5669,
+      "mtimeMs": 1777992550741.3508,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "32ec1d5e"
+      },
+      "indexedAt": "2026-05-05T14:54:01.257Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.257Z",
+      "symbols": [
+        {
+          "name": "OfficeScene",
+          "kind": "class",
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "specifier": "phaser"
+        },
+        {
+          "specifier": "../assets/AssetGenerator.js",
+          "resolvedPath": "client/src/game/assets/AssetGenerator.js"
+        },
+        {
+          "specifier": "../entities/Player.js",
+          "resolvedPath": "client/src/game/entities/Player.js"
+        },
+        {
+          "specifier": "../entities/RemotePlayer.js",
+          "resolvedPath": "client/src/game/entities/RemotePlayer.js"
+        },
+        {
+          "specifier": "../network/NetworkManager.js",
+          "resolvedPath": "client/src/game/network/NetworkManager.js"
+        }
+      ],
+      "outgoingPaths": [
+        "client/src/game/assets/AssetGenerator.js",
+        "client/src/game/entities/Player.js",
+        "client/src/game/entities/RemotePlayer.js",
+        "client/src/game/network/NetworkManager.js"
+      ],
+      "incomingPaths": [
+        "client/src/game/Game.js"
+      ]
+    },
+    "client/src/main.js": {
+      "path": "client/src/main.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 660,
+      "mtimeMs": 1777991085475.7178,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "a1002c48"
+      },
+      "indexedAt": "2026-05-05T14:54:01.257Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.257Z",
+      "symbols": [],
+      "imports": [
+        {
+          "specifier": "./game/Game.js",
+          "resolvedPath": "client/src/game/Game.js"
+        }
+      ],
+      "outgoingPaths": [
+        "client/src/game/Game.js"
+      ],
+      "incomingPaths": []
+    },
+    "client/vite.config.js": {
+      "path": "client/vite.config.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 276,
+      "mtimeMs": 1777990802897.3933,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "fcc46f18"
+      },
+      "indexedAt": "2026-05-05T14:54:01.257Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.257Z",
+      "symbols": [
+        {
+          "name": "vite.config",
+          "kind": "default",
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "specifier": "vite"
+        }
+      ],
+      "outgoingPaths": [],
+      "incomingPaths": []
+    },
+    "package-lock.json": {
+      "path": "package-lock.json",
+      "language": "json",
+      "parserStatus": "indexed",
+      "size": 12730,
+      "mtimeMs": 1777991989411.672,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "eb3dd9e3"
+      },
+      "indexedAt": "2026-05-05T14:54:01.257Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.257Z",
+      "symbols": [],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": []
+    },
+    "package.json": {
+      "path": "package.json",
+      "language": "json",
+      "parserStatus": "indexed",
+      "size": 293,
+      "mtimeMs": 1777990783895.8767,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "464d7602"
+      },
+      "indexedAt": "2026-05-05T14:54:01.257Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.257Z",
+      "symbols": [],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": []
+    },
+    "server/package-lock.json": {
+      "path": "server/package-lock.json",
+      "language": "json",
+      "parserStatus": "indexed",
+      "size": 63996,
+      "mtimeMs": 1777991980927.3523,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "c7cd5e6c"
+      },
+      "indexedAt": "2026-05-05T14:54:01.258Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.258Z",
+      "symbols": [],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": []
+    },
+    "server/package.json": {
+      "path": "server/package.json",
+      "language": "json",
+      "parserStatus": "indexed",
+      "size": 296,
+      "mtimeMs": 1777990802897.3352,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "105130a1"
+      },
+      "indexedAt": "2026-05-05T14:54:01.258Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.258Z",
+      "symbols": [],
+      "imports": [],
+      "outgoingPaths": [],
+      "incomingPaths": []
+    },
+    "server/src/app.js": {
+      "path": "server/src/app.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 737,
+      "mtimeMs": 1777991598236.2458,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "b1fa8640"
+      },
+      "indexedAt": "2026-05-05T14:54:01.259Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.259Z",
+      "symbols": [],
+      "imports": [
+        {
+          "specifier": "express"
+        },
+        {
+          "specifier": "http"
+        },
+        {
+          "specifier": "colyseus"
+        },
+        {
+          "specifier": "./rooms/OfficeRoom.js",
+          "resolvedPath": "server/src/rooms/OfficeRoom.js"
+        }
+      ],
+      "outgoingPaths": [
+        "server/src/rooms/OfficeRoom.js"
+      ],
+      "incomingPaths": [
+        "server/src/index.js"
+      ]
+    },
+    "server/src/index.js": {
+      "path": "server/src/index.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 171,
+      "mtimeMs": 1777990840487.004,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "e562ffa"
+      },
+      "indexedAt": "2026-05-05T14:54:01.259Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.259Z",
+      "symbols": [],
+      "imports": [
+        {
+          "specifier": "./app.js",
+          "resolvedPath": "server/src/app.js"
+        }
+      ],
+      "outgoingPaths": [
+        "server/src/app.js"
+      ],
+      "incomingPaths": []
+    },
+    "server/src/rooms/OfficeRoom.js": {
+      "path": "server/src/rooms/OfficeRoom.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 833,
+      "mtimeMs": 1777991590377.0107,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "2bbc6ed2"
+      },
+      "indexedAt": "2026-05-05T14:54:01.259Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.259Z",
+      "symbols": [
+        {
+          "name": "OfficeRoom",
+          "kind": "class",
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "specifier": "colyseus"
+        },
+        {
+          "specifier": "../schema/OfficeState.js",
+          "resolvedPath": "server/src/schema/OfficeState.js"
+        }
+      ],
+      "outgoingPaths": [
+        "server/src/schema/OfficeState.js"
+      ],
+      "incomingPaths": [
+        "server/src/app.js"
+      ]
+    },
+    "server/src/schema/OfficeState.js": {
+      "path": "server/src/schema/OfficeState.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 1700,
+      "mtimeMs": 1777992566061.4097,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "b4976cf3"
+      },
+      "indexedAt": "2026-05-05T14:54:01.259Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.259Z",
+      "symbols": [
+        {
+          "name": "OfficeState",
+          "kind": "class",
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "specifier": "@colyseus/schema"
+        },
+        {
+          "specifier": "./Player.js",
+          "resolvedPath": "server/src/schema/Player.js"
+        }
+      ],
+      "outgoingPaths": [
+        "server/src/schema/Player.js"
+      ],
+      "incomingPaths": [
+        "server/src/rooms/OfficeRoom.js"
+      ]
+    },
+    "server/src/schema/Player.js": {
+      "path": "server/src/schema/Player.js",
+      "language": "javascript",
+      "parserStatus": "indexed",
+      "size": 470,
+      "mtimeMs": 1777990840487.1816,
+      "fingerprint": {
+        "kind": "hash",
+        "value": "73efd2fb"
+      },
+      "indexedAt": "2026-05-05T14:54:01.259Z",
+      "firstIndexedAt": "2026-05-05T14:54:01.259Z",
+      "symbols": [
+        {
+          "name": "Player",
+          "kind": "class",
+          "exported": true
+        }
+      ],
+      "imports": [
+        {
+          "specifier": "@colyseus/schema"
+        }
+      ],
+      "outgoingPaths": [],
+      "incomingPaths": [
+        "server/src/schema/OfficeState.js"
+      ]
+    }
+  }
 }

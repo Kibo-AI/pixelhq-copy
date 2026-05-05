@@ -69,6 +69,10 @@ export class OfficeScene extends Phaser.Scene {
       down: Phaser.Input.Keyboard.KeyCodes.S,
       left: Phaser.Input.Keyboard.KeyCodes.A,
       right: Phaser.Input.Keyboard.KeyCodes.D,
+      upArrow: Phaser.Input.Keyboard.KeyCodes.UP,
+      downArrow: Phaser.Input.Keyboard.KeyCodes.DOWN,
+      leftArrow: Phaser.Input.Keyboard.KeyCodes.LEFT,
+      rightArrow: Phaser.Input.Keyboard.KeyCodes.RIGHT,
     });
 
     this.remotePlayers = new Map();
@@ -136,15 +140,15 @@ export class OfficeScene extends Phaser.Scene {
   }
 
   handleInput() {
-    if (!this.networkReady || this.player.isMoving) return;
+    if (this.player.isMoving) return;
 
     let dx = 0;
     let dy = 0;
 
-    if (Phaser.Input.Keyboard.JustDown(this.keys.up)) dy = -1;
-    else if (Phaser.Input.Keyboard.JustDown(this.keys.down)) dy = 1;
-    else if (Phaser.Input.Keyboard.JustDown(this.keys.left)) dx = -1;
-    else if (Phaser.Input.Keyboard.JustDown(this.keys.right)) dx = 1;
+    if (Phaser.Input.Keyboard.JustDown(this.keys.up) || Phaser.Input.Keyboard.JustDown(this.keys.upArrow)) dy = -1;
+    else if (Phaser.Input.Keyboard.JustDown(this.keys.down) || Phaser.Input.Keyboard.JustDown(this.keys.downArrow)) dy = 1;
+    else if (Phaser.Input.Keyboard.JustDown(this.keys.left) || Phaser.Input.Keyboard.JustDown(this.keys.leftArrow)) dx = -1;
+    else if (Phaser.Input.Keyboard.JustDown(this.keys.right) || Phaser.Input.Keyboard.JustDown(this.keys.rightArrow)) dx = 1;
 
     if (dx !== 0 || dy !== 0) {
       const destX = this.player.gridX + dx;
