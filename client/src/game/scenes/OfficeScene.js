@@ -64,6 +64,18 @@ export class OfficeScene extends Phaser.Scene {
     this.cameras.main.setZoom(1);
     this.cameras.main.roundPixels = true;
 
+    // Kibo HQ header
+    const headerText = this.add.text(16, 16, 'Kibo HQ', {
+      fontFamily: '"Courier New", Courier, monospace',
+      fontSize: '24px',
+      color: '#e94560',
+      stroke: '#000000',
+      strokeThickness: 4,
+      shadow: { offsetX: 2, offsetY: 2, color: '#000', blur: 0, fill: true },
+    });
+    headerText.setScrollFactor(0);
+    headerText.setDepth(1000);
+
     this.keys = this.input.keyboard.addKeys({
       up: Phaser.Input.Keyboard.KeyCodes.W,
       down: Phaser.Input.Keyboard.KeyCodes.S,
