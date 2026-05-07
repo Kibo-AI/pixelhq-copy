@@ -65,7 +65,7 @@ export class OfficeScene extends Phaser.Scene {
     this.cameras.main.roundPixels = true;
 
     // Kibo HQ header
-    const headerText = this.add.text(16, 16, 'Kibo HQ', {
+    const headerText = this.add.text(16, 16, 'Kibo AI HQ', {
       fontFamily: '"Courier New", Courier, monospace',
       fontSize: '24px',
       color: '#e94560',
